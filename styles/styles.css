@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: darkcyan;
+  width: 100%;
+  font-size: 1.2em; 
+}
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    padding: 0.3em;
+  }
+
+  .name {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.5em 0.3em;
+    color: #ffffff;
+  }
+
+  .navbar-toggle {
+  position: absolute;
+  top: 0.5em;
+  right: 0.3em;
+  cursor: pointer; 
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1em;
+  background: none;
+  border: none;
+
+}
+
+.navbar-toggle:after,
+  .navbar-toggle:before,
+  .navbar-toggle span {
+    background-color: white;
+    border: none;
+    content: '';
+    display: block;
+    height: 0.3em;
+    margin: 0.2em 0;
+    width: 2.5em;
+  }
+
+  .nav-list li{
+    text-align: center;
+    margin: 0.5em auto;
+  } 
+  
+  .nav-list {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 721px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 3em;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-right: 0.5em;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-list li{
+    margin: 0.8em;
+  }
+
+  .nav-link {
+    margin-left: 2em;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }  
+}

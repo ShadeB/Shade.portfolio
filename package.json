@@ -1,0 +1,16 @@
+{
+  "name": "shadeb.portfolio",
+  "version": "1.0.0",
+  "description": "My very first portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "shade.portfolio"
+  },
+  "author": "Shade Banda",
+  "license": "MIT"
+}
