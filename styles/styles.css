@@ -6,6 +6,11 @@
 
 body {
   font-family: 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgb(34, 47, 69);
+  color: #ffffff;
 }
 
 ul {
@@ -22,9 +27,67 @@ a {
 }
 
 .navbar {
-  background-color: darkcyan;
+  /*background-color: darkcyan;*/
+  box-shadow: rgba(34, 47, 69, 0.36) 0rem 0.2rem 0.2rem 0rem;
   width: 100%;
   font-size: 1.2em; 
+}
+
+.hero {
+  background-image: linear-gradient(-45deg, rgb(76, 108, 211), rgb(39, 50, 109));
+}
+
+.skill-icon {
+  min-width: 4rem;
+  min-height: 4rem;
+  max-width: 6rem;
+  max-height: 6rem;
+  margin: 1rem;
+}
+
+section {
+  /*background-image: linear-gradient(-45deg, rgb(76, 108, 211), rgb(39, 50, 109));*/
+  min-height: 14rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.container {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.container--flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 720px) {
