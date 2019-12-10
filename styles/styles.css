@@ -33,6 +33,50 @@ a {
   font-size: 1.2em; 
 }
 
+.navbar {
+  padding: 0.3em;
+}
+
+.name {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.5em 0.3em;
+  color: #ffffff;
+}
+
+.navbar-toggle {
+position: absolute;
+top: 0.5em;
+right: 0.3em;
+cursor: pointer; 
+color: rgba(255,255,255,0.8);
+font-size: 1.1em;
+background: none;
+border: none;
+
+}
+
+.navbar-toggle:after,
+.navbar-toggle:before,
+.navbar-toggle span {
+  background-color: #ffffff;
+  border: none;
+  content: '';
+  display: block;
+  height: 0.3rem;
+  margin: 0.2rem 0;
+  width: 2.5rem;
+}
+
+.nav-list li{
+  text-align: center;
+  margin: 0.5em auto;
+} 
+
+.nav-list {
+  display: none;
+}
+
 .hero {
   background-image: linear-gradient(-45deg, rgb(76, 108, 211), rgb(39, 50, 109));
 }
@@ -47,10 +91,27 @@ a {
 
 section {
   /*background-image: linear-gradient(-45deg, rgb(76, 108, 211), rgb(39, 50, 109));*/
-  min-height: 14rem;
+  min-height: 20rem;
   padding: 1rem;
   text-align: center;
 }
+
+.heading {
+  margin: 3rem 0;
+  font-size: 1.8rem;
+}
+
+.heading:before, .heading:after {
+    background-color: #ffffff;
+    border: none;
+    content: '';
+    display: block;
+    height: 0.5rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 12.5rem;
+  }
 
 .intro {
   width: 80%;
@@ -67,6 +128,7 @@ section {
 
 .center {
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .text-center {
@@ -77,67 +139,74 @@ section {
   text-align: justify;
 }
 
-.container {
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 0 1rem;
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem 2rem;
+  justify-items: center;
+}
+
+.project__card {
+  width: 20rem;
+  margin: 0 1.4rem 3.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(-45deg, rgb(76, 108, 211), rgb(39, 50, 109));
+}
+
+.project__image {
   width: 100%;
+  height: 20rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
 
-.container--flex {
-  align-items: center;
+.project__techstack {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 720px) {
-  .navbar {
-    padding: 0.3em;
-  }
+.tech__item {
+  border: 0.08rem solid black;
+  padding: 0.2rem 0.4rem;
+}
 
-  .name {
-    display: inline-block;
-    font-size: 1em;
-    margin: 0.5em 0.3em;
-    color: #ffffff;
-  }
+.contactform {
+  width: 20rem;
+  margin: auto;
+}
 
-  .navbar-toggle {
-  position: absolute;
-  top: 0.5em;
-  right: 0.3em;
-  cursor: pointer; 
-  color: rgba(255,255,255,0.8);
-  font-size: 1.1em;
+.label-group {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 7.5rem auto;
+}
+
+.label-group label {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  border-left: 0.3rem solid;
+}
+
+.label-group input, .label-group textarea {
+  padding: 1rem;
   background: none;
-  border: none;
-
+  border: 0.07rem solid #ffffff;
+  border-radius: 0.2rem;
+  color: #ffffff;
 }
 
-.navbar-toggle:after,
-  .navbar-toggle:before,
-  .navbar-toggle span {
-    background-color: white;
-    border: none;
-    content: '';
-    display: block;
-    height: 0.3em;
-    margin: 0.2em 0;
-    width: 2.5em;
-  }
-
-  .nav-list li{
-    text-align: center;
-    margin: 0.5em auto;
-  } 
-  
-  .nav-list {
-    display: none;
-  }
-
+#submit {
+  border: 0.07rem solid #ffffff;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff; 
+  background-color: rgb(34, 47, 69);
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 720px) {
   .navbar {
     display: flex;
     justify-content: space-between;

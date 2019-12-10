@@ -20,12 +20,12 @@
 
         <ul class = "nav-list">
           <li class = "nav-link">
-          <a href = "#">Home</a></li>
+          <a href = "#Skills">Skills</a></li>
 
           <li class = "nav-link">
-          <a href = "#">Projects</a></li>
-          <li class = "nav-link"><a href = "#">About me</a></li>
-          <li class = "nav-link"><a href = "#">Get in touch</a></li>
+          <a href = "#Projects">Projects</a></li>
+          <li class = "nav-link"><a href = "#Aboutme">About me</a></li>
+          <li class = "nav-link"><a href = "#Contact">Get in touch</a></li>
         </ul>
 
       </nav>
@@ -35,8 +35,8 @@
     <main>
       <section class="hero flex align-center">
         <div class = "intro">
-          <h1>front end developer</h1>
-          <p>self taught developer with an interest in web accessibility and performance,
+          <h1>Shade Banda</h1>
+          <p>Frontend developer with an interest in web accessibility and performance,
             progressive web apps, fully responsive design and a long term goal of becoming a 
             master of ui/ux design.
           </p>
@@ -44,7 +44,7 @@
       </section>
 
       <section>
-        <h2>Skills</h2>
+        <h2 id = "Skills" class = "heading">Skills</h2>
         <div class = "flex center">
             <div class = "skill-icon">
               <svg viewBox="0 0 128 128"><path fill="#E44D26" d="M27.854 
@@ -145,10 +145,17 @@
       </section>
 
       <section>
-        <h3>Projects</h3>
-        <div class = "container container--flex">
+        <h3 id = "Projects" class = "heading">Projects</h3>
+        <div class = "project__grid">
 
           <div class = "project__card">
+            <img class = "project__image" src = "images\MovieApp.PNG"/>
+            <ul class = "project__techstack">
+              <li class = "tech__item">HTML5</li>
+              <li class = "tech__item">CSS3</li>
+              <li class = "tech__item">Bootstrap</li>
+              <li class = "tech__item">Angular</li>
+            </ul>
             <div class = "project__description">
                <p>A Netflix movie search app clone which uses the OMDB open API to fetch
                   movies and display them to the user.</p>
@@ -160,6 +167,13 @@
           </div> 
 
            <div class = "project__card">
+            <img class = "project__image" src = "images\MovieApp.PNG"/>
+            <ul class = "project__techstack">
+              <li class = "tech__item">HTML5</li>
+              <li class = "tech__item">CSS3</li>
+              <li class = "tech__item">Bootstrap</li>
+              <li class = "tech__item">Angular</li>
+            </ul>
             <div class = "project__description">
                <p>A Netflix movie search app clone which uses the OMDB open API to fetch
                   movies and display them to the user.</p>
@@ -175,22 +189,49 @@
 
       <section>
         <div class = "intro text-justify">
-          <h4 class = "text-center">About me</h4>
+          <h4 id = "Aboutme" class = "heading text-center">About me</h4>
           <p>Shade Banda</p>
-          <p>I am a front end developer based in Lusaka,Zambia. Apart from having acquired
-          a certificate in computing from Zambia Center for Accountancy Studies(ZCAS) under 
-          accreditation of Greenwich university of the United Kingdom, I am mostly self taught.
+          <p>I am a front end developer based in Lusaka,Zambia. I have a certificate in computing and
+          entirely self taught in web technologies.
           </p>
-          <p>I am a participant in the Google Africa developer scholarship held in partnership with
+          <p>I am a finalist in the Google Africa developer scholarship held in partnership with
           Pluralsight and Andela, a company that specialises in the training and deployment of
-          African developers to companies that need help finding talent.The program kicked off
-          in may 2019 and should wrap up in december of the same year.</p>
+          African developers to companies that seek world class talent.</p>
+          <p>The program kicked off in may 2019 and will conclude with finalists taking the 
+          Google mobile web specialist exam, scheduled for january 2020.</p>
           <p>My main focus right now is to become a master of the front end.
-          I will also explore backend technologies as a secondary goal to round out my skills as
-          a fullstack web developer. 
+          I will also explore backend technologies as needed to accomplish given tasks correctly.
           </p>
           <p>I am currently on the lookout for real world opportunities to sharpen my skills in
           the web development sector.</p>
+        </div>
+      </section>
+
+      <section>
+        <h5 id = "Contact" class = "heading">Get in touch</h5>
+
+        <div>
+          <form action = "https://formspree.io/shadebanda2@gmail.com" method = "POST"
+          class = "contactform">
+
+            <div class = "label-group">
+              <label for = "name" >Name:</label>
+              <input type = "text" name = "name" placeholder = "Name" required value/>
+            </div>
+            
+            <div class = "label-group">
+              <label for = "name" >Email:</label>
+              <input type = "email" name = "email" placeholder = "email" required value/>
+            </div>
+
+            <div class = "label-group">
+              <label for = "name" >Message:</label>
+              <textarea name = "Message" cols = "20" rows = "4" placeholder = "Message"
+              required></textarea>
+            </div>
+
+            <input id="submit" type = "submit" value = "send"/>
+          </form>
         </div>
       </section>
 
