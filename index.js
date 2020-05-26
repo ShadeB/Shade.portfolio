@@ -1,14 +1,13 @@
 const btnClicked = () => {
+	let navToggle = document.querySelector('.nav-button');
 
-  let navToggle = document.querySelector('.navbar-toggle');
+	const navActive = () => {
+		let navLinks = document.querySelector('.nav__links');
+		navLinks.classList.toggle('active');
+		navToggle.classList.toggle('nav-clicked');
+	};
 
-  const navActive = () => {
-
-    let navlist = document.querySelector('.nav-list');
-    navlist.classList.toggle('active');
-  }
-
-  navToggle.addEventListener('click', navActive);
-}
+	navToggle.addEventListener('click', navActive);
+};
 
 btnClicked();
